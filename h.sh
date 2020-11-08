@@ -10,6 +10,7 @@ while true; do
 		done
 		echo -n " | Cleaning up..."
 		git gc --prune=all --force -q
+		rm -rf ./.git/logs
 		echo -en "\033[K"
 		commit
 	done
